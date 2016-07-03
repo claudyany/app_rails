@@ -14,6 +14,10 @@
   <strong>Total paginas:</strong>
   <%= @book.total_paginas %>
 </p>
+<p>
+  <strong>revisões:</strong>
+  <%= @book.revision_number %>
+</p>
 
 <%= link_to 'Edit', edit_book_path(@book) %> |
 <%= link_to 'Back', books_path %>
