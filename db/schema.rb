@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160703122514) do
+ActiveRecord::Schema.define(version: 20160703124413) do
 
   create_table "books", force: :cascade do |t|
     t.string   "title"
@@ -19,6 +19,13 @@ ActiveRecord::Schema.define(version: 20160703122514) do
     t.integer  "total_paginas"
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
+  end
+
+  create_table "musics", force: :cascade do |t|
+    t.string   "artist"
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end
